@@ -5,15 +5,18 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ToevoegenComponent } from './toevoegen/toevoegen.component';
+import { LijstComponent } from './lijst/lijst.component';
 
 const appRoutes: Routes = [
   { path: 'toevoegen', component: ToevoegenComponent },
+  {path: 'lijst', component: LijstComponent},
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     ToevoegenComponent,
+    LijstComponent,
   ],
   imports: [
     ReactiveFormsModule,
