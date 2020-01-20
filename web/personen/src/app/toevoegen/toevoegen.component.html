@@ -1,0 +1,7 @@
+<p (click)="requestNaarServer()">toevoegen works!</p>
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <input placeholder="Naam" type="text" formControlName="naam">
+    <input placeholder="geboortedatum" type="date" formControlName="geboortedatum">
+    <input placeholder="studierichting" type="string" formControlName="studierichting">
+    <button type="submit" [disabled]="!profileForm.valid">Toevoegen</button>
+</form>
